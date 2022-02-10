@@ -31,7 +31,7 @@ openstack_servers:
     flavor: GLOBAL-CPU_4_Memory_8192_Disk_30_flavor
     key_name: "{{GUID}}-keypair"
     network: "{{GUID}}-dev-network"
-  - instance_name: lb
+  - instance_name: frontend1
     AnsibleGroup: load_balancers
     deployment: prod
     security_group_name: "{{GUID}}-HostSG"
